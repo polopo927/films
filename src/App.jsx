@@ -3,37 +3,25 @@ import './App.css'
 
 function App() {
 
+	const dayList = [
+		{day:'Понедельник', film:'Фильм1'},
+		{day:'Вторник', film:'Фильм2'},
+		{day:'Среда', film:'Фильм3'},
+		{day:'Четверг', film:'Фильм4'},
+		{day:'Пятница', film:'Фильм5'},
+		{day:'Суббота', film:'Фильм6'},
+		{day:'Воскресенье', film:'Фильм7'}
+	]
+
 	return (
 		<div className='films'>
 			<ul className='filmlist__items'>
-				<li>
-					<div>Понедельник</div>
-					<a href='#'>Фильм1</a>
-				</li>
-				<li>
-					<div>Вторник</div>
-					<a href='#'>Фильм2</a>
-				</li>
-				<li>
-					<div>Среда</div>
-					<a href='#'>Фильм3</a>
-				</li>
-				<li>
-					<div>Четверг</div>
-					<a href='#'>Фильм4</a>
-				</li>
-				<li>
-					<div>Пятница</div>
-					<a href='#'>Фильм5</a>
-				</li>
-				<li>
-					<div>Суббота</div>
-					<a href='#'>Фильм6</a>
-				</li>
-				<li>
-					<div>Воскресенье</div>
-					<a href='#'>Фильм7</a>
-				</li>
+				{dayList.map((day, index) =>( 
+					<li key={index}>
+						<div>{day.day}</div>
+						<a href="#">{day.film}</a>
+					</li>
+				))}
 			</ul>
 		</div>
 	)
