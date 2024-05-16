@@ -5,7 +5,6 @@ function App() {
 
 	return (
 		<div className='films'>
-			{/* <div className='playlist'> */}
 			<ul className='filmlist__items'>
 				<li>
 					<div>Понедельник</div>
@@ -36,7 +35,6 @@ function App() {
 					<a href='#'>Фильм7</a>
 				</li>
 			</ul>
-			{/* </div> */}
 		</div>
 	)
 }
