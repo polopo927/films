@@ -66,10 +66,6 @@ a {
 	min-height: 300px;
 }
 
-/* .playlist {
-	min-height: 100%;
-} */
-
 .filmlist__items {
 	height: 100%;
 	display: flex;
