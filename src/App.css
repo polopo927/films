@@ -64,23 +64,11 @@ a {
 	border: 1px solid teal;
 	width: 300px;
 	min-height: 300px;
-}
-
-.filmlist__items {
-	height: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
-.filmlist__items div {
-	font-weight: bold;
-	margin-bottom: 2px;
-}
-
-.filmlist__items li+li {
-	margin-top: 15px;
-}
-
-.filmlist__items a {
+.films a {
 	color: saddlebrown;
 }
