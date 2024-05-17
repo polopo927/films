@@ -61,8 +61,7 @@ a {
 
 .films {
 	margin: 0 auto;
-	border: 1px solid teal;
-	width: 300px;
+	max-width: 500px;
 	min-height: 300px;
 	display: flex;
 	flex-direction: column;
@@ -71,4 +70,28 @@ a {
 
 .films a {
 	color: saddlebrown;
+}
+
+.card {
+	border: 1px solid teal;
+	border-radius: 15px;
+	box-shadow: 0 8px 10px 2px #777;
+	transform: scale(0.9);
+	transition: all 0.5s;
+	margin-bottom: 15px;
+}
+
+.card:hover {
+	background: #d1cbcb;
+	box-shadow: 0 5px 10px 1px #777;
+	transform: scale(1);
+	transition: all 0.5s;
+}
+
+.card div {
+	font-weight: bold;
+}
+
+.card a {
+	font-size: 20px;
 }
