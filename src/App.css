@@ -98,3 +98,24 @@ a {
 .card a {
 	font-size: 20px;
 }
+
+
+.card .notes {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+  }
+  
+  .card button {
+	margin-top: 10px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .card button:hover {
+	background-color: yellow;
+  }

@@ -4,19 +4,25 @@ import { Card } from './components/Card'
 import { getList } from './components/request'
 
 function App() {
-	const [dayList, setDayList] = useState([])
+	const [topList, setTopList] = useState([])
 
 	useEffect(() => {
 		getList('/data.json')
-			.then(data => setDayList(data.movielist))
+			.then(data => setTopList(data.toplist))
 			.catch(e => console.log(e))
 	}, [])
 
 
 	return (
 		<div className='films'>
-			{dayList.map((day, index) => (
-				<Card key={index} day={day.day} film={day.film} />
+			{topList.map((top, index) => (
+				<Card
+				key={index}
+				place={top.place}
+				film={top.film}
+				date={top.release_date}
+				notes={top.notes}
+				/>
 			))}
 		</div>
 	)
