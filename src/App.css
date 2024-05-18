@@ -70,7 +70,7 @@ a {
 
 .films div:last-child {
 	grid-column: 2 / span 1;
-  }
+}
 
 .films a {
 	color: saddlebrown;
@@ -106,16 +106,30 @@ a {
 	background-color: #f8f8f8;
 	border: 1px solid #ddd;
 	border-radius: 5px;
-  }
-  
-  .card button {
+}
+
+.card button {
 	margin-top: 10px;
 	padding: 5px 10px;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-  }
-  
-  .card button:hover {
+}
+
+.card button:hover {
 	background-color: yellow;
-  }
+}
+
+.card .notes {
+	max-height: 0;
+	padding: 0 10px;
+	opacity: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.card .notes-visible {
+	max-height: 100%;
+	padding: 10px;
+	opacity: 1;
+}
