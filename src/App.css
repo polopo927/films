@@ -74,6 +74,7 @@ a {
 
 .films a {
 	color: saddlebrown;
+	font-size: 20px;
 }
 
 .card {
@@ -90,46 +91,48 @@ a {
 	background-color: #adb2ca;
 }
 
-.card div {
+.card__place {
 	font-weight: bold;
 	margin-bottom: 10px;
 }
 
-.card a {
-	font-size: 20px;
+.card__date {
+	margin-bottom: 10px;
 }
 
-
-.card .notes {
-	margin-top: 10px;
-	padding: 10px;
-	background-color: #f8f8f8;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-}
-
-.card button {
+.card__arrow {
 	margin-top: 10px;
 	padding: 5px 10px;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	margin-bottom: 10px;
 }
 
-.card button:hover {
+.card__arrow:hover {
 	background-color: yellow;
 }
 
-.card .notes {
-	max-height: 0;
-	padding: 0 10px;
-	opacity: 0;
-	overflow: hidden;
-	transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out, opacity 0.3s ease-in-out;
+.arrow {
+	transition: transform 0.3s ease-in-out;
 }
 
-.card .notes-visible {
-	max-height: 100%;
-	padding: 10px;
+.arrow-up {
+	transform: rotate(180deg);
+}
+
+
+.dropdownContent[data-open='true'] {
 	opacity: 1;
+	visibility: visible;
+}
+
+.dropdownContent {
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
