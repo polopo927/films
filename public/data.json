@@ -1,32 +1,56 @@
 {
-	"movielist": [
+	"toplist": [
 		{
-			"day": "Понедельник",
-			"film": "Фильм1"
+			"place": "Место 1",
+			"film": "Multiplied",
+			"release_date": "20 мая 2024"
 		},
 		{
-			"day": "Вторник",
-			"film": "Фильм2"
+			"place": "Место 2",
+			"film": "Songs of Earth",
+			"release_date": "24 мая 2024"
 		},
 		{
-			"day": "Среда",
-			"film": "Фильм3"
+			"place": "Место 3",
+			"film": "Lilies (Re-release)",
+			"release_date": "24 мая 2024",
+			"notes": "ergreg regerfwefe gdfgdfgdsfg"
 		},
 		{
-			"day": "Четверг",
-			"film": "Фильм4"
+			"place": "Место 4",
+			"film": "Maestra",
+			"release_date": "24 мая 2024"
 		},
 		{
-			"day": "Пятница",
-			"film": "Фильм5"
+			"place": "Место 5",
+			"film": "Deer Camp '86",
+			"release_date": "31 мая 2024"
 		},
 		{
-			"day": "Суббота",
-			"film": "Фильм6"
+			"place": "Место 6",
+			"film": "Shadow Land",
+			"release_date": "31 мая 2024",
+			"notes":"234523 426t45t 3532423"
 		},
 		{
-			"day": "Воскресенье",
-			"film": "Фильм7"
+			"place": "Место 7",
+			"film": "Despicable Me 4",
+			"release_date": "3 июля 2024"
+		},
+		{
+			"place": "Место 8",
+			"film": "Mean Girls",
+			"release_date": "12 января 2024"
+		},
+		{
+			"place": "Место 9",
+			"film": "Argylle",
+			"release_date": "2 февраля 2024"
+		},
+		{
+			"place": "Место 10",
+			"film": "Madame Web",
+			"release_date": "14 февраля 2024"
 		}
 	]
 }
