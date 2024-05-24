@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import { Card } from './components/Card'
 import { getList } from './components/request'
@@ -16,7 +16,7 @@ function App() {
 	return (
 		<div className='films'>
 			{dayList.map((day, index) => (
-				<Card key={index} day={day.day} film={day.film} />
+				<Card key={index} day={day.release_date} film={day.film} notes={day.notes} />
 			))}
 		</div>
 	)
