@@ -68,26 +68,4 @@ a {
 	padding: 20px;
 }
 
-.card {
-	border: 1px solid teal;
-	border-radius: 15px;
-	padding: 20px;
-}
 
-.card:last-child {
-	grid-column-start: 2;
-	grid-column-end: 3;
-}
-
-.card__release {
-	font-weight: bold;
-}
-
-.card__film {
-	color: saddlebrown;
-	font-size: 20px;
-}
-
-.card__notes {
-	position: relative;
-}

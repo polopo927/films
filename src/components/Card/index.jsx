@@ -1,4 +1,5 @@
 import { Accordion } from '../Accordion'
+import './index.css'
 
 export const Card = ({ day, film, notes }) => {
 
